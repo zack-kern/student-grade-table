@@ -10,30 +10,79 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
       <header class="my-3">
         <div class="row">
-          <h5 class="col-sm-9">Student Grade Table</h5>
-          <h5 class="col-sm-3">
+          <h4 class="col-sm-9">Student Grade Table</h4>
+          <h4 class="col-sm-3">
             Average Grade
             <span
               class="badge badge-secondary border border-dark rounded-0"
             ></span>
-          </h5>
+          </h4>
         </div>
       </header>
-      <table class="table table-striped table-bordered table-hover table-sm">
-        <thead class="thead-dark">
-          <tr>
-            <th class="p-2">Student Name</th>
-            <th class="p-2">Course</th>
-            <th class="p-2">Grade</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="row">
+        <table
+          class="col-sm-9 table table-striped table-bordered table-hover table-sm"
+        >
+          <thead class="thead-dark">
+            <tr>
+              <th class="p-2">Student Name</th>
+              <th class="p-2">Course</th>
+              <th class="p-2">Grade</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <form class="col-sm-3" action="">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <i class="pt-2 input-group-text fas fa-user"></i>
+            </div>
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <i class="pt-2 input-group-text fas fa-list-alt"></i>
+            </div>
+            <input
+              class="form-control"
+              id="course"
+              name="course"
+              placeholder="Course"
+            />
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <i class="pt-2 input-group-text fas fa-graduation-cap"></i>
+            </div>
+            <input
+              class="form-control"
+              id="grade"
+              name="grade"
+              placeholder="Grade"
+            />
+          </div>
+          <div class="mr-1 row d-flex justify-content-end">
+            <input type="submit" />
+            <input class="ml-2" type="reset" />
+          </div>
+        </form>
+      </div>
     </div>
   </body>
   <script
